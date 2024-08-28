@@ -1,6 +1,6 @@
 
-// import Chatbot from './Chatbot';
-import ChatbotButton from './ChatbotButton.js';
+import Chatbot from './Chatbot';
+// import ChatbotButton from './ChatbotButton.js';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -25,8 +25,8 @@ function App() {
           {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </div>
-      {/* <Chatbot/> */}
-      <ChatbotButton/>
+      <Chatbot/>
+      {/* <ChatbotButton/> */}
     </Router>
     
   );

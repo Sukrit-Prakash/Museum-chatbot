@@ -1,0 +1,69 @@
+.collections {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1559be;
+    text-align: center;
+  }
+  
+  .collections-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url('/images/museum-background.jpg'); */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    z-index: -1;
+    background-color: rgb(246, 246, 235);
+  }
+  
+  .collections h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .collections p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 90%;
+  }
+  
+  .collections-description {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  
+  .collections-description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .collections-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }

@@ -1,0 +1,12 @@
+{
+    "settings": {
+      "nlp": {
+        "corpora": [
+          "./corpus-en.json",
+          "./corpus-es.json"
+        ]
+      }
+      
+    },
+    "use": ["Basic", "LangEs", "ConsoleConnector", "ExpressApiServer", "DirectlineConnector"]
+  }

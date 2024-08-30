@@ -14,17 +14,15 @@
     position: fixed;
     bottom: 80px;
     right: 20px;
-    width: 350px; /* Increased width */
-    height: 450px; /* Height remains unchanged */
+    width: 250px;
+    height: 400px;
     border: 1px solid #ccc;
     border-radius: 40px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    background-color: #7b708f;
+    background-color:  #7b708f;
     display: flex;
     flex-direction: column;
 }
-
-
 
 .chat-header {
     background-color: #5117c4;
@@ -95,3 +93,14 @@
     padding: 0cm;
     left: 0;
 }
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .qr-code-image {
+    max-width: 200px;
+    max-height: 200px;
+  }

@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 // })
- mongoose.connect('mongodb+srv://sukritprakash2020:2iB9icnhl3niLL8I@inventory.lohzopz.mongodb.net')
+ mongoose.connect('mongodb+srv://mKXPvx34kVKSC9pL:mKXPvx34kVKSC9pL@rahul.3xxhr.mongodb.net/Rahul?retryWrites=true&w=majority&appName=Rahul')
   .then(() => {
     console.log('MongoDB connected');
   })

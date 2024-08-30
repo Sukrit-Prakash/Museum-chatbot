@@ -1,6 +1,7 @@
+// src/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Rename Header.css to Navbar.css
+import './Navbar.css'; // Make sure this file exists and is correctly named
 
 const Navbar = () => {
   return (

@@ -58,14 +58,19 @@ const Chatbot = () => {
             } else if (stage === 'awaitingName') {
                 setTicketInfo({ ...ticketInfo, name: input });
                 setStage('awaitingConfirmation');
-            } else if (stage === 'awaitingConfirmation') {
+            } 
+            else if (stage === 'awaitingConfirmation') {
                 setStage('');
                 if (response.data.showQRCode) {
                     setShowQRCode(true);
                 }
-                // if (response.data.qrCodeImage) {
-                //     setQrCodeImage(response.data.qrCodeImage);
-                // }
+            }
+            else if (stage === 'awaitingCancellation') {
+                setStage('');
+                if(showQRCode === true)
+                   {setShowQRCode(false);}
+                
+                
             } else {
                 const lowerResponse = botResponse.toLowerCase();
                 if (lowerResponse.includes('how many tickets') || lowerResponse.includes('cuántos boletos')) {
@@ -74,6 +79,9 @@ const Chatbot = () => {
                     setStage('awaitingName');
                 } else if (lowerResponse.includes('press [confirm]') || lowerResponse.includes('presione [confirmar]')) {
                     setStage('awaitingConfirmation');
+                }
+                else if(lowerResponse.includes('your tickets has been cancelled')){
+                    setStage('awaitingCancellation')
                 }
             }
     

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-
+import MuseumHalls from './Museumhalls';
 const Home = () => {
   return (
     <div className="home">
@@ -64,6 +64,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <MuseumHalls/>
     </div>
   );
 };

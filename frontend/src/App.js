@@ -11,7 +11,7 @@ import Collections from './components/Collections.js';
 import Exhibitions from './components/Exhibitions';
 // index.js or App.js
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import MuseumHalls from './components/Museumhalls.js';
 // import Visit from './components/Visit';
 // import Contact from './components/Contact';
 

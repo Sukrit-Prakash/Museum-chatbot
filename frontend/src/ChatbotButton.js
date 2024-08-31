@@ -64,6 +64,9 @@ const Chatbot = () => {
                 if (response.data.showQRCode) {
                     setShowQRCode(true);
                 }
+                setTimeout(() => {
+                    setShowQRCode(false);
+                }, 8000); // 10000 milliseconds = 10 seconds
             }
             else if (stage === 'awaitingCancellation') {
                 setStage('');
@@ -72,6 +75,7 @@ const Chatbot = () => {
                 
                 
             } else {
+                
                 const lowerResponse = botResponse.toLowerCase();
                 if (lowerResponse.includes('how many tickets') || lowerResponse.includes('cuántos boletos')) {
                     setStage('awaitingTickets');

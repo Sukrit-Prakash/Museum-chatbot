@@ -112,7 +112,7 @@ const Chatbot = () => {
                          {showQRCode && (
                             <div className="qr-code-container">
                                 {/* <img src="https://static.vecteezy.com/system/resources/previews/002/557/391/original/qr-code-for-scanning-free-vector.jpg" alt="GPay QR Code" className="qr-code-image" /> */}
-                                <img src="./images/qr_code.jpg" alt="GPay QR Code" className="qr-code-image" />
+                                <img src="./images/qr_code .jpg" alt="GPay QR Code" className="qr-code-image" />
                                 {/* {setShowQRCode='false'} */}
                                 <p>Scan this QR code to pay</p>
                             </div>

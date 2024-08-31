@@ -1,3 +1,15 @@
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .chat-toggle-button {
     position: fixed;
     bottom: 20px;
@@ -8,20 +20,27 @@
     padding: 10px 20px;
     border-radius: 100px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Button hover effect */
+}
+
+.chat-toggle-button:hover {
+    background-color: #3e0e9a; /* Darker shade on hover */
 }
 
 .chat-window {
     position: fixed;
     bottom: 80px;
-    right: 20px;
-    width: 250px;
-    height: 400px;
+    right: 50px;
+    width: 400px; /* Increased width */
+    height: 500px; /* Increased height */
     border: 1px solid #ccc;
-    border-radius: 40px;
+    border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    background-color:  #7b708f;
+    background-color: white; /* Changed to white */
     display: flex;
     flex-direction: column;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.5s forwards; /* Animation for fade-in */
 }
 
 .chat-header {
@@ -29,14 +48,14 @@
     color: rgb(203, 167, 179);
     padding: 15px;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .chat-body {
     flex: 1;
-    padding: 5px;
+    padding: 10px;
     overflow-y: auto;
 }
 
@@ -56,51 +75,65 @@
     color: #1b233a;
 }
 
-/* .chat-footer button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-} */
-
 .chat-message {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
     max-width: 80%;
+    display: flex; /* Flex display to align icon and text */
+    align-items: center; /* Center content vertically */
 }
 
+/* User message style */
 .chat-message.user {
-    /* background-color: #007bff; */
-    color: rgb(19, 37, 232);
+    background-color: #e0f7fa; /* Light cyan background for user */
+    color: #134e4a; /* Dark teal text color */
     align-self: flex-end;
-    font-size:20px;
-    align-content: end;
+    font-size: 20px;
     text-align: left;
-    padding: 0cm;
+    border: 1px solid #b2ebf2; /* Border matching the background */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px; /* Padding inside message tile */
+    margin-right: 15px; /* Space from the right side */
+    border-radius: 15px 15px 0px 15px; /* Rounded corners */
 }
 
+/* Curio (bot) message style */
 .chat-message.bot {
-    background-color: #8895d9;
-    align-self:flex-end;
-    align-content: end;
-    font-size:20px;
-    font-stretch: expanded;
+    background-color: #f0f4c3; /* Light yellow background for bot */
+    color: #827717; /* Olive text color */
+    align-self: flex-start;
+    font-size: 20px;
     font-style: italic;
-    /* text-align: end; */
-    padding: 0cm;
-    left: 0;
+    border: 1px solid #dce775; /* Border matching the background */
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px; /* Padding inside message tile */
+    margin-left: 15px; /* Space from the left side */
+    border-radius: 15px 15px 15px 0px; /* Rounded corners */
 }
+
+/* New class for the user icon */
+.user-icon {
+    width: 20px; /* Icon size */
+    height: 20px;
+    margin-right: 10px; /* Space between icon and message */
+}
+
+/* New class for the bot icon */
+.bot-icon {
+    width: 20px; /* Icon size */
+    height: 20px;
+    margin-right: 10px; /* Space between icon and message */
+}
+
 .qr-code-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-  }
-  
-  .qr-code-image {
+}
+
+.qr-code-image {
     max-width: 200px;
     max-height: 200px;
-  }
+}

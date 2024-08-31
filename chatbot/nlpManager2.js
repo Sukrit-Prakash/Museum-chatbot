@@ -160,6 +160,31 @@ manager.addDocument('en', 'Who were the main countries in the Cold War?', 'histo
 manager.addDocument('en', 'What were the effects of the Cold War?', 'history.world.coldwar');
 manager.addAnswer('en', 'history.world.coldwar', 'The Cold War was a period of geopolitical tension between the Soviet Union and the United States and their respective allies, lasting from 1947 to 1991, marked by political, military, and ideological conflicts. Visit Hall 13 for an in-depth look at the Cold War.');
 
+// ticket refund policy 
+// User intents for asking about the refund policy
+manager.addDocument('en', 'What is the ticket refund policy?', 'ticket.refund');
+manager.addDocument('en', 'Can I get a refund for my tickets?', 'ticket.refund');
+manager.addDocument('en', 'How do I apply for a ticket refund?', 'ticket.refund');
+manager.addDocument('en', 'Is it possible to refund my tickets?', 'ticket.refund');
+manager.addDocument('en', 'How long does it take to get a refund?', 'ticket.refund');
+manager.addDocument('en', 'What are the conditions for a ticket refund?', 'ticket.refund');
+manager.addDocument('en', 'Can I get a full refund on my ticket?', 'ticket.refund');
+manager.addDocument('en', 'Are there any fees for refunding a ticket?', 'ticket.refund');
+manager.addDocument('en', 'Can I cancel and get a refund?', 'ticket.refund');
+manager.addDocument('en', 'Please explain the refund policy for tickets.', 'ticket.refund');
+
+
+// Responses from the chatbot about the refund policy
+manager.addAnswer('en', 'ticket.refund', 'Our refund policy allows you to get a refund within 30 days of purchase, provided that the tickets have not been used.');
+manager.addAnswer('en', 'ticket.refund', 'You can apply for a ticket refund through our website or by contacting customer service.');
+manager.addAnswer('en', 'ticket.refund', 'Refunds are typically processed within 5-7 business days after the request is approved.');
+manager.addAnswer('en', 'ticket.refund', 'To be eligible for a refund, the tickets must not have been scanned or used for entry.');
+manager.addAnswer('en', 'ticket.refund', 'A small processing fee may apply to ticket refunds. Please check the details on our website.');
+manager.addAnswer('en', 'ticket.refund', 'Full refunds are available if the refund request is made within 24 hours of purchase.');
+manager.addAnswer('en', 'ticket.refund', 'If you cancel your tickets, you can get a refund based on the refund policy. Please note that certain conditions apply.');
+manager.addAnswer('en', 'ticket.refund', 'For more information about ticket refunds, please visit our refund policy page or contact support.');
+manager.addAnswer('en', 'ticket.refund', 'Refund requests made after the event date may not be honored.');
+manager.addAnswer('en', 'ticket.refund', 'Tickets purchased with promotional discounts may not be eligible for a full refund.');
 
 
 // Add named entity for names

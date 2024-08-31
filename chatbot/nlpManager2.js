@@ -21,6 +21,19 @@ manager.addDocument('en', 'Go ahead and confirm the tickets', 'ticket.confirm');
 manager.addDocument('en', '[CONFIRM]', 'ticket.confirm');
 manager.addDocument('en', 'CONFIRM', 'ticket.confirm');
 manager.addAnswer('en', 'ticket.confirm', 'Please confirm your name and the number of tickets to proceed.');
+// ticket cancellation
+manager.addDocument('en', 'Cancel my tickets', 'ticket.cancel');
+manager.addDocument('en', 'I want to cancel the tickets', 'ticket.cancel');
+manager.addDocument('en', 'Go ahead and cancel the tickets', 'ticket.cancel');
+manager.addDocument('en', 'Cancel these tickets', 'ticket.cancel');
+manager.addDocument('en', 'Please cancel my tickets', 'ticket.cancel');
+manager.addDocument('en', '[CANCEL]', 'ticket.cancel');
+manager.addDocument('en', 'CANCEL', 'ticket.cancel');
+
+manager.addAnswer('en', 'ticket.cancel', 'YOUR TICKETS HAS BEEN CANCELLED SUCCESSFULLY');
+
+
+
 
 manager.addDocument('en', 'I want to buy a ticket', 'ticket.purchase');
 manager.addDocument('en', 'Buy tickets', 'ticket.purchase');

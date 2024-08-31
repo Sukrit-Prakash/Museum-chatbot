@@ -1,21 +1,162 @@
-/* src/About.css */
-.about {
-  padding: 100px 0;
-  background-color: #96b0e3;
+.about-page {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding-bottom: 2rem;
+}
+
+/* Hero Section */
+.about-hero {
+  background-image: url('./../../public/images/India_national_museum.webp');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  color: white;
 }
 
-.about .container {
-  max-width: 80%;
-  margin: auto;
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
 }
 
-.about h2 {
-  font-size: 24px;
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-.about p {
-  font-size: 16px;
-  line-height: 1.5;
+.about-hero p {
+  font-size: 1.2rem;
 }
 
+/* History Section */
+.history-section {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.history-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.history-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-text {
+  max-width: 600px;
+}
+
+.history-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 4rem 2rem;
+  background-color: #f0f0f0;
+}
+
+.mission-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.mission-cards {
+  display: grid;
+  height: 600px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  color: #555;
+}
+
+/* Collections Section */
+.collections-section {
+  padding: 4rem 2rem;
+  background-color: #e9ecef;
+}
+
+.collections-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.collection-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.collection-item:hover {
+  transform: translateY(-10px);
+}
+
+.collection-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.collection-item h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.collection-item p {
+  padding: 0 1rem 1rem;
+  color: #555;
+}

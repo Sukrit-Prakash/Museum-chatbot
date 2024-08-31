@@ -1,0 +1,113 @@
+/* src/components/Contact.css */
+
+.contact {
+    padding: 60px 0;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e4f5);
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form-group .icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #007bff;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+  
+  .submit-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact h2 {
+      font-size: 2.5rem;
+    }
+  
+    .contact p {
+      font-size: 1rem;
+    }
+  
+    .contact-container {
+      padding: 20px;
+    }
+  }
+  

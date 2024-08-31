@@ -1,19 +1,14 @@
-
-// import Chatbot from './Chatbot';
-import ChatbotButton from './ChatbotButton.js';
 import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Collections from './components/Collections.js';
+import Collections from './components/Collections';
 import Exhibitions from './components/Exhibitions';
-// index.js or App.js
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import MuseumHalls from './components/Museumhalls.js';
-// import Visit from './components/Visit';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
+import Visit from './components/visit.js'; // Ensure this path is correct
+import ChatbotButton from './ChatbotButton.js';
 
 function App() {
   return (
@@ -25,14 +20,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/exhibitions" element={<Exhibitions />} />
-          {/* <Route path="/visit" element={<Visit />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/visit" element={<Visit />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      {/* <Chatbot/> */}
-      <ChatbotButton/>
+      <ChatbotButton />
     </Router>
-    
   );
 }
 

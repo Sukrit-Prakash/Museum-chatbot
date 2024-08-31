@@ -1,211 +1,242 @@
 .home {
-    font-family: 'Arial', sans-serif;
-    background-color: #2293d9;
-    
-  }
-  
-  .hero {
-    /*  dont know why cant attack background image from images folder*/
-    /* background-image: url("/images/artifact2.jpeg"); */
-    background-image: url('https://www.hlimg.com/images/things2do/738X538/l_1525068662t.JPG');
-    background-size: cover;
-    background-position: center;
-    height: 110vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #9aaad7;
-  }
-  
-  .hero-content {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    border-radius: 10px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #3998e6;
-    color:#1d3557;
-    padding: 1rem 2rem;
-    text-decoration:dashed;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #12c195;
-  }
-  
-  .highlights {
-    padding: 4rem 2rem;
-    background-color: #b9cae3;
-  }
-  
-  .highlights h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #1d3557;
-  }
-  
-  .highlight-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
-  .highlight-item {
-    background-color: #cfdfe5;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .highlight-item:hover {
-    transform: translateY(-20px);
-    /* transform: translate3d(-20px,-20px,40px) */
-    /* -ms-transform-origin-z: (15px); */
-    /* transition: cubic-bezier(0.23, 1, 0.320, 1); */
-  }
-  
-  .highlight-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .highlight-item h3 {
-    font-size: 1.5rem;
-    margin: 1rem;
-    color: #1d3557;
-  }
-  
-  .highlight-item p {
-    margin: 0 1rem 1rem;
-    color: #457b9d;
-  }
-  
-  .featured-exhibition {
-    background-image: url('https://www.hlimg.com/images/things2do/738X538/l_1525068662t.JPG');
-    background-size: cover;
-    background-position: center;
-    color: #62abbf;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  .featured-content {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 2rem;
-    border-radius: 50px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .featured-exhibition h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .featured-exhibition h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .featured-exhibition p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .secondary-button {
-    display: inline-block;
-    background-color: #a8dadc;
-    color: #1d3557;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .secondary-button:hover {
-    background-color: #8ecae6;
-  }
-  
-  .visit-info {
-    padding: 4rem 2rem;
-    background-color: #c0cae4;
-  }
-  
-  .visit-info h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #1d3557;
-  }
-  
-  .info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-  
-  .info-item {
-    background-color: #e5eaf8;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .info-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #1d3557;
-  }
-  
-  .info-item p {
-    margin-bottom: 0.5rem;
-    color: #457b9d;
-  }
-  
-  .text-link {
-    color: #f616d4;
-    text-decoration: none;
-    font-weight:bolder;
-  }
-  
-  .text-link:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero p {
-      font-size: 1.2rem;
-    }
-  
-    .featured-exhibition h2 {
-      font-size: 2rem;
-    }
-  
-    .featured-exhibition h3 {
-      font-size: 1.5rem;
-    }
-  }
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.hero {
+  background-image: url('./../../public/images/bookCover.png');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff3d3d;
+}
+
+.about-museum {
+  display: flex;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  background-color: #f0f0f0;
+  background-image: url('./../../public/images/statue-img.jpg');
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-image {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.text-content p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.highlights {
+  padding: 4rem 2rem;
+  background-color: #e9ecef;
+}
+
+.highlights h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.highlight-item {
+  background-color: #fff;
+  border-radius: 10px;
+  height:30rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-10px);
+}
+
+.highlight-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.highlight-item h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: #333;
+}
+
+.highlight-item p {
+  margin: 0 1rem 1rem;
+  color: #555;
+}
+
+.featured-exhibition {
+  background-image: url('./../../public/images/poster3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.featured-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.featured-exhibition h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.featured-exhibition h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.featured-exhibition p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.secondary-button {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+  background-color: #217dbb;
+}
+
+.visit-info {
+  padding: 4rem 2rem;
+  background-color: #bab2b2;
+  /* background-image: url("./../../public/./images/statue2.jpg"); */
+}
+
+.visit-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.info-item {
+  background-color: #f9f6f6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.info-item p {
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-size: 1.1em;
+}
+
+
+.visit-info iframe {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.LiveCount-container {
+  position: relative;
+  width: 10%;
+  align: center;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.LiveCount {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.LiveCount h4 {
+  margin: 0;
+  font-size: 0.8rem; /* Smaller font size */
+  line-height: 1.2rem;
+}
+

@@ -76,6 +76,92 @@ manager.addAnswer('es', 'ticket.count', 'Vale, %number% entradas. Por favor, pro
 manager.addDocument('es', 'Me llamo %name%', 'ticket.name');
 manager.addAnswer('es', 'ticket.name', 'Gracias %name%! Tus entradas estarán reservadas a tu nombre.');
 
+
+// history world and indian questions
+// Indian History - Independence
+// Indian History - Independence
+manager.addDocument('en', 'When did India gain independence?', 'history.india.independence');
+manager.addDocument('en', 'Tell me about Indian independence', 'history.india.independence');
+manager.addDocument('en', 'On which date did India become independent?', 'history.india.independence');
+manager.addDocument('en', 'What year did India get freedom?', 'history.india.independence');
+manager.addDocument('en', 'When was India freed from British rule?', 'history.india.independence');
+manager.addAnswer('en', 'history.india.independence', 'India gained independence on August 15, 1947. You can visit Hall 5 to explore exhibits on India\'s struggle for independence.');
+
+
+// Indian History - Mahatma Gandhi
+manager.addDocument('en', 'Who was Mahatma Gandhi?', 'history.india.gandhi');
+manager.addDocument('en', 'Tell me about Mahatma Gandhi', 'history.india.gandhi');
+manager.addDocument('en', 'What did Mahatma Gandhi do?', 'history.india.gandhi');
+manager.addDocument('en', 'What role did Gandhi play in Indian history?', 'history.india.gandhi');
+manager.addDocument('en', 'Why is Gandhi important in Indian history?', 'history.india.gandhi');
+manager.addAnswer('en', 'history.india.gandhi', 'Mahatma Gandhi was a leader of the Indian independence movement, known for his philosophy of non-violent resistance. To learn more, visit Hall 6 dedicated to Mahatma Gandhi and his contributions.');
+
+// Indian History - Mughal Empire
+manager.addDocument('en', 'Tell me about the Mughal Empire', 'history.india.mughal');
+manager.addDocument('en', 'What is the history of the Mughal Empire?', 'history.india.mughal');
+manager.addDocument('en', 'Who were the Mughal rulers?', 'history.india.mughal');
+manager.addDocument('en', 'What was the Mughal Empire?', 'history.india.mughal');
+manager.addDocument('en', 'Give me some information about the Mughal Empire', 'history.india.mughal');
+manager.addAnswer('en', 'history.india.mughal', 'The Mughal Empire was a prominent empire in Indian history, ruling from the early 16th to the 18th century, known for its rich cultural contributions and powerful rulers like Akbar and Shah Jahan. Visit Hall 3 for a detailed exploration of the Mughal Empire.');
+
+// Indian History - Freedom Fighters
+manager.addDocument('en', 'Who were the freedom fighters of India?', 'history.india.freedomfighters');
+manager.addDocument('en', 'Tell me about Indian freedom fighters', 'history.india.freedomfighters');
+manager.addDocument('en', 'Name some important Indian freedom fighters', 'history.india.freedomfighters');
+manager.addDocument('en', 'Who fought for India\'s independence?', 'history.india.freedomfighters');
+manager.addDocument('en', 'Give me a list of Indian freedom fighters', 'history.india.freedomfighters');
+manager.addAnswer('en', 'history.india.freedomfighters', 'Some of the prominent Indian freedom fighters include Mahatma Gandhi, Bhagat Singh, Subhas Chandra Bose, Rani Lakshmibai, and Sardar Vallabhbhai Patel. You can learn more in Hall 7 dedicated to India\'s freedom fighters.');
+
+// World History - World War I
+manager.addDocument('en', 'When did World War I start?', 'history.world.ww1');
+manager.addDocument('en', 'Tell me about World War I', 'history.world.ww1');
+manager.addDocument('en', 'What were the causes of World War I?', 'history.world.ww1');
+manager.addDocument('en', 'Who fought in World War I?', 'history.world.ww1');
+manager.addDocument('en', 'How did World War I end?', 'history.world.ww1');
+manager.addAnswer('en', 'history.world.ww1', 'World War I began on July 28, 1914, and ended on November 11, 1918. It involved many of the world\'s great powers, which were divided into two opposing alliances: the Allies and the Central Powers. To explore more, visit Hall 9 dedicated to the World Wars.');
+
+// World History - World War II
+manager.addDocument('en', 'When did World War II start?', 'history.world.ww2');
+manager.addDocument('en', 'Tell me about World War II', 'history.world.ww2');
+manager.addDocument('en', 'What were the causes of World War II?', 'history.world.ww2');
+manager.addDocument('en', 'Who were the main countries in World War II?', 'history.world.ww2');
+manager.addDocument('en', 'How did World War II end?', 'history.world.ww2');
+manager.addAnswer('en', 'history.world.ww2', 'World War II started on September 1, 1939, and ended on September 2, 1945. It was a global war involving the Allies, led by the US, UK, and Soviet Union, and the Axis powers, led by Germany, Italy, and Japan. Visit Hall 10 for detailed exhibits on World War II.');
+
+// World History - Industrial Revolution
+manager.addDocument('en', 'What was the Industrial Revolution?', 'history.world.industrial');
+manager.addDocument('en', 'Tell me about the Industrial Revolution', 'history.world.industrial');
+manager.addDocument('en', 'When did the Industrial Revolution start?', 'history.world.industrial');
+manager.addDocument('en', 'What were the impacts of the Industrial Revolution?', 'history.world.industrial');
+manager.addDocument('en', 'Where did the Industrial Revolution begin?', 'history.world.industrial');
+manager.addAnswer('en', 'history.world.industrial', 'The Industrial Revolution began in the late 18th century in Britain and led to major changes in industry, economy, and society, marking the transition from agrarian societies to industrialized ones. Explore Hall 4 to learn more about the Industrial Revolution.');
+
+// World History - French Revolution
+manager.addDocument('en', 'When did the French Revolution start?', 'history.world.frenchrevolution');
+manager.addDocument('en', 'Tell me about the French Revolution', 'history.world.frenchrevolution');
+manager.addDocument('en', 'What caused the French Revolution?', 'history.world.frenchrevolution');
+manager.addDocument('en', 'Who were the key figures in the French Revolution?', 'history.world.frenchrevolution');
+manager.addDocument('en', 'How did the French Revolution impact the world?', 'history.world.frenchrevolution');
+manager.addAnswer('en', 'history.world.frenchrevolution', 'The French Revolution started in 1789 and led to the overthrow of the monarchy, the rise of Napoleon, and significant social and political changes in France and beyond. Visit Hall 11 to learn about the French Revolution.');
+
+// World History - Renaissance
+manager.addDocument('en', 'What was the Renaissance?', 'history.world.renaissance');
+manager.addDocument('en', 'Tell me about the Renaissance period', 'history.world.renaissance');
+manager.addDocument('en', 'When did the Renaissance begin?', 'history.world.renaissance');
+manager.addDocument('en', 'What were the key features of the Renaissance?', 'history.world.renaissance');
+manager.addDocument('en', 'Who were important figures of the Renaissance?', 'history.world.renaissance');
+manager.addAnswer('en', 'history.world.renaissance', 'The Renaissance was a cultural movement that began in Italy in the 14th century and spread across Europe, characterized by a revival of classical learning, art, and humanism. Hall 12 features exhibits on the Renaissance and its key figures.');
+
+// World History - Cold War
+manager.addDocument('en', 'What was the Cold War?', 'history.world.coldwar');
+manager.addDocument('en', 'Tell me about the Cold War', 'history.world.coldwar');
+manager.addDocument('en', 'When did the Cold War start?', 'history.world.coldwar');
+manager.addDocument('en', 'Who were the main countries in the Cold War?', 'history.world.coldwar');
+manager.addDocument('en', 'What were the effects of the Cold War?', 'history.world.coldwar');
+manager.addAnswer('en', 'history.world.coldwar', 'The Cold War was a period of geopolitical tension between the Soviet Union and the United States and their respective allies, lasting from 1947 to 1991, marked by political, military, and ideological conflicts. Visit Hall 13 for an in-depth look at the Cold War.');
+
+
+
 // Add named entity for names
 manager.addNamedEntityText(
   'name',

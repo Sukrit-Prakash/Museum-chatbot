@@ -55,6 +55,11 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 Contact
 For any questions or suggestions, feel free to reach out:
 
-Author: Sukrit Prakash
+Authors: 
+Sukrit Prakash
 Email: sukritprakash2020@gmail.com
 GitHub: https://github.com/Sukrit-Prakash
+
+Rahul Goel :
+Email:rahulgoel20031975@gmail.com
+Github:https://github.com/QuantumCraftsman

@@ -10,6 +10,7 @@ Features
 4.Multilingual Support: Supports multiple languages, enhancing the accessibility of the chatbot.
 5.Interactive Frontend: A user-friendly interface built with React.js that engages visitors in a conversation.
 6.Smart NLP: Uses Node NLP for natural language processing, allowing the chatbot to understand and respond to various user intents accurately.
+7.Seamless Payment Integration: Enables users to make payments directly from the chat using the Razorpay API gateway, facilitating smooth transactions for ticket purchases and other services.
 
 
 <!-- for installation -->
